@@ -26,5 +26,8 @@ def note_name(note_number)
     "B"
   end
 
-  return note
+  octave = (note_number / 12) - 2
+  octave = octave.to_s
+
+  return note + octave
 end
