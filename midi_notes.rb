@@ -1,4 +1,6 @@
 def note_name(note_number)
+  return "Out of range." if note_number > 127
+
   note = case note_number % 12
   when 0
     "C"

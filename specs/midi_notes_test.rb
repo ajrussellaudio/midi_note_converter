@@ -19,4 +19,9 @@ class Functions_Practice < MiniTest::Test
     assert_equal( "F#3", f_sharp_result )
   end
 
+  def test_out_of_range()
+    out_of_range_result = note_name(128)
+    assert_equal( "Out of range.", out_of_range_result)
+  end
+
 end
